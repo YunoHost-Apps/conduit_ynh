@@ -1,1 +1,1 @@
-Conduit is a simple, fast and reliable chat server powered by Matrix
+Conduit est un serveur de chat simple, rapide et fiable alimenté par Matrix
