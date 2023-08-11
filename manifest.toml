@@ -1,0 +1,66 @@
+packaging_format = 2
+
+id = "conduit"
+name = "Conduit"
+description.en = "Simple, fast and reliable chat server powered by Matrix"
+description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
+
+version = "0.6.0~ynh1"
+
+maintainers = [""]
+
+[upstream]
+license = "Apache"
+website = "https://conduit.rs/"
+admindoc = "https://gitlab.com/famedly/conduit"
+code = "https://gitlab.com/famedly/conduit"
+
+[integration]
+yunohost = ">= 11.2"
+architectures = "all"
+multi_instance = false
+ldap = "not_relevant"
+sso = "not_relevant"
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.server_name]
+    ask.en = "Select the display name for your Conduit server"
+    ask.fr = "Sélectionnez le nom d'affichage pour votre serveur Conduit"
+    help.en = "If you choose domain.tld, your Matrix user-ids will be looking like @user:domain.tld instead of @user:conduit.domain.tld"
+    help.fr = "Si vous choisissez domain.tld, vos identifiants Matrix ressembleront à @utilisateur:domain.tld plutôt que @utilisateur:conduit.domain.tld"
+    type = "domain"
+
+[resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_amd64/conduit?job=docker:master"
+        sha256 = "eb085e2a43e9225da1fafe01956b361a48b48a1dce9370c3e09bbc120ff6998d"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+    server_api.url = "__DOMAIN__/_matrix"
+    server_api.label = "Server access for client apps."
+    server_api.show_tile = false
+    server_api.allowed = "visitors"
+    server_api.auth_header = false
+    server_api.protected = true
+    
+    [resources.ports]
+    main.default = 6167
+    tls.default = 8448
+    tls.exposed = "TCP"
+
+    #[resources.apt]
+    #packages = "sqlite3"
