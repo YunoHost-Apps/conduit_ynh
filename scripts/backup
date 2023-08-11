@@ -27,6 +27,11 @@ ynh_backup --src_path="$install_dir"
 
 ynh_backup --src_path="/etc/nginx/conf.d/$domain.d/$app.conf"
 
+if yunohost --output-as plain domain list | grep -q "^$server_name$"
+then
+    ynh_backup --src_path="/etc/nginx/conf.d/${server_name}.d/${app}_server_name.conf"
+fi
+
 #=================================================
 # BACKUP SYSTEMD
 #=================================================

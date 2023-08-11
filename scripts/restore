@@ -22,11 +22,14 @@ chown -R $app:root "$install_dir"
 #=================================================
 # RESTORE SYSTEM CONFIGURATIONS
 #=================================================
-# RESTORE THE PHP-FPM CONFIGURATION
-#=================================================
 ynh_script_progression --message="Restoring system configurations related to $app..." --weight=1
 
 ynh_restore_file --origin_path="/etc/nginx/conf.d/$domain.d/$app.conf"
+
+if yunohost --output-as plain domain list | grep -q "^$server_name$"
+then
+	ynh_restore_file --origin_path="/etc/nginx/conf.d/${server_name}.d/${app}_server_name.conf"
+fi
 
 ynh_restore_file --origin_path="/etc/systemd/system/$app.service"
 systemctl enable $app.service --quiet
