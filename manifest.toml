@@ -64,6 +64,13 @@ ram.runtime = "50M"
     server_api.allowed = "visitors"
     server_api.auth_header = false
     server_api.protected = true
+
+    server_client_infos.url = "__SERVER_NAME__/.well-known/matrix"
+    server_client_infos.label = "Server info for federation. (well-known)"
+    server_client_infos.show_tile = false
+    server_client_infos.allowed = "visitors"
+    server_client_infos.auth_header = false
+    server_client_infos.protected = true
     
     [resources.ports]
     main.default = 6167
