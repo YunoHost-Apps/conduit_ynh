@@ -32,7 +32,7 @@ then
 	ynh_setup_source --dest_dir="$install_dir"
 fi
 
-chown -R $app:www-data "$install_dir"
+chown -R $app:root "$install_dir"
 chmod +x -R "$install_dir/conduit"
 
 #=================================================
