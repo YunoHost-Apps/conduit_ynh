@@ -19,7 +19,7 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
 
-chown -R $app:www-data "$install_dir"
+chown -R $app:root "$install_dir"
 chmod +x -R "$install_dir/conduit"
 
 #=================================================
@@ -45,7 +45,7 @@ ynh_script_progression --message="Adding a configuration file..." --weight=1
 ynh_add_config --template="../conf/conduit.toml" --destination="$install_dir/conduit.toml"
 
 chmod 400 "$install_dir/conduit.toml"
-chown $app:$app "$install_dir/conduit.toml"
+chown $app:root "$install_dir/conduit.toml"
 
 #=================================================
 # GENERIC FINALIZATION
