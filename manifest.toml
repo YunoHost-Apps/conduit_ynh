@@ -14,6 +14,7 @@ license = "Apache-2.0"
 website = "https://conduit.rs/"
 admindoc = "https://gitlab.com/famedly/conduit"
 code = "https://gitlab.com/famedly/conduit"
+fund = "https://liberapay.com/timokoesters/"
 
 [integration]
 yunohost = ">= 11.2"
