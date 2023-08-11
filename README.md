@@ -16,7 +16,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Conduit is a simple, fast and reliable chat server powered by Matrix
+Conduit is a simple, fast and reliable chat server powered by Matrix.
 
 **Shipped version:** 0.6.0~ynh1
 
