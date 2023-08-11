@@ -19,11 +19,6 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 Conduit est un serveur de chat simple, rapide et fiable alimenté par Matrix.
 
 **Version incluse :** 0.6.0~ynh1
-
-## Captures d’écran
-
-![Capture d’écran de Conduit](./doc/screenshots/example.jpg)
-
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://conduit.rs/>

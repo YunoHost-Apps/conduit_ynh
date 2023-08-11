@@ -19,11 +19,6 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 Conduit is a simple, fast and reliable chat server powered by Matrix.
 
 **Shipped version:** 0.6.0~ynh1
-
-## Screenshots
-
-![Screenshot of Conduit](./doc/screenshots/example.jpg)
-
 ## Documentation and resources
 
 * Official app website: <https://conduit.rs/>
