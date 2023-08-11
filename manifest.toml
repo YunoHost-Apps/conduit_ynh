@@ -36,6 +36,12 @@ ram.runtime = "50M"
     help.fr = "Si vous choisissez domain.tld, vos identifiants Matrix ressembleront à @utilisateur:domain.tld plutôt que @utilisateur:conduit.domain.tld"
     type = "domain"
 
+    [install.registration]
+    ask.en = "Should the server allow any visitor to register as a user?"
+    ask.fr = "Le serveur doit-il permettre à quiconque de s'enregistrer comme utilisateur ?"
+    type = "boolean"
+    default = false
+    
 [resources]
 
     [resources.sources]
