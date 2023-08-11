@@ -10,3 +10,4 @@ name = "Conduit configuration"
         ask = "Should registration be enabled?"
         type = "boolean"
         default = false
+        bind = "allow_registration:/var/www/__APP__/conduit.toml"
