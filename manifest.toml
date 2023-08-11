@@ -17,7 +17,7 @@ code = "https://gitlab.com/famedly/conduit"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = "all"
+architectures = ["arm64", "amd64", "armhf"]
 multi_instance = false
 ldap = "not_relevant"
 sso = "not_relevant"
@@ -41,8 +41,15 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_amd64/conduit?job=docker:master"
-        sha256 = "eb085e2a43e9225da1fafe01956b361a48b48a1dce9370c3e09bbc120ff6998d"
+        in_subdir = false
+        extract = false
+        rename = "conduit"
+        amd64.url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_amd64/conduit?job=docker:master"
+        amd64.sha256 = "eb085e2a43e9225da1fafe01956b361a48b48a1dce9370c3e09bbc120ff6998d"
+        arm64.url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_arm64/conduit?job=docker:master"
+        arm64.sha256 = "ef089841b2ff23285fa458459a3add2a608c0ec0702434b1a8973d2cac1b978f"
+        armhf.url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_arm_v7/conduit?job=docker:master"
+        armhf.sha256 = "595534a8eb19496f7ac39130e62a29645fc04b001faad72032144ab97467d394"
 
     [resources.system_user]
 
