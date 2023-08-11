@@ -74,6 +74,3 @@ ram.runtime = "50M"
     main.default = 6167
     tls.default = 8448
     tls.exposed = "TCP"
-
-    #[resources.apt]
-    #packages = "sqlite3"
