@@ -10,6 +10,22 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# RETRIEVE ARGUMENTS FROM THE MANIFEST
+#=================================================
+
+#server_name=$YNH_APP_ARG_SERVER_NAME
+registration=$YNH_APP_ARG_REGISTRATION
+disable_federation="true"
+
+#=================================================
+# STORE SETTINGS FROM MANIFEST
+#=================================================
+
+#ynh_app_setting_set --app=$app --key=server_name --value=$server_name
+ynh_app_setting_set --app=$app --key=registration --value=$registration
+ynh_app_setting_set --app=$app --key=disable_federation --value=$disable_federation
+
+#=================================================
 # APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -19,6 +35,7 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
 
+chmod -R o-rwx "$install_dir"
 chown -R $app:root "$install_dir"
 chmod +x -R "$install_dir/conduit"
 

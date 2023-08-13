@@ -1,0 +1,22 @@
+version = "1.0"
+
+[main]
+name = "Conduit configuration"
+
+    [main.registration]
+    name = "User registration"
+
+        [main.registration.registration]
+        ask = "Should registration be enabled?"
+        type = "boolean"
+        yes = "true"
+        no = "false"
+        bind = "allow_registration:/var/www/__APP__/conduit.toml"
+
+        [main.registration.disable_federation]
+        ask = "Disable Federation"
+        type = "boolean"
+        yes = "true"
+        no = "false"
+        help = "Do not communicate with other homeservers of the Matrix Federation."
+        bind = "allow_federation:/var/www/__APP__/conduit.toml"
