@@ -5,7 +5,7 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.6.0~ynh1"
+version = "0.6.0~ynh2"
 
 maintainers = [""]
 
@@ -14,6 +14,7 @@ license = "Apache-2.0"
 website = "https://conduit.rs/"
 admindoc = "https://gitlab.com/famedly/conduit"
 code = "https://gitlab.com/famedly/conduit"
+fund = "https://liberapay.com/timokoesters/"
 
 [integration]
 yunohost = ">= 11.2"
@@ -36,6 +37,14 @@ ram.runtime = "50M"
     help.fr = "Si vous choisissez domain.tld, vos identifiants Matrix ressembleront à @utilisateur:domain.tld plutôt que @utilisateur:conduit.domain.tld"
     type = "domain"
 
+    [install.registration]
+    ask.en = "Should the server allow any visitor to register as a user?"
+    ask.fr = "Le serveur doit-il permettre à quiconque de s'enregistrer comme utilisateur ?"
+    type = "boolean"
+    help.en = "If no, accounts should be registered by an admin after defining a secret. If yes, to protect your server and the federation from spammer, federation will be deactived by default. You must Activate CAPTCHA verification before federation reactivation. See Config Panel for instructions"
+    help.fr = "Si non, les comptes seront créés par un admin après avoir défini un secret. Si oui, la fédération sera désactivée pour protéger la fédération et vous des spammeurs. Activez la vérification par CAPTCHA avant de réactiver la fédération ! Voir les instructions dans le Config Panel"
+    default = false
+    
 [resources]
 
     [resources.sources]
@@ -63,11 +72,15 @@ ram.runtime = "50M"
     server_api.allowed = "visitors"
     server_api.auth_header = false
     server_api.protected = true
+
+    server_client_infos.url = "__SERVER_NAME__/.well-known/matrix"
+    server_client_infos.label = "Server info for federation. (well-known)"
+    server_client_infos.show_tile = false
+    server_client_infos.allowed = "visitors"
+    server_client_infos.auth_header = false
+    server_client_infos.protected = true
     
     [resources.ports]
     main.default = 6167
     tls.default = 8448
     tls.exposed = "TCP"
-
-    #[resources.apt]
-    #packages = "sqlite3"
