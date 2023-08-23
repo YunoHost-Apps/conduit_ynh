@@ -13,10 +13,10 @@ name = "Conduit configuration"
         no = "false"
         bind = "allow_registration:/var/www/__APP__/conduit.toml"
 
-        [main.registration.disable_federation]
-        ask = "Disable Federation"
+        [main.registration.federation]
+        ask = "Allow Federation"
         type = "boolean"
         yes = "true"
         no = "false"
-        help = "Do not communicate with other homeservers of the Matrix Federation."
+        help = "Communicate with other homeservers of the Matrix Federation."
         bind = "allow_federation:/var/www/__APP__/conduit.toml"
