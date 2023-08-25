@@ -5,7 +5,7 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.6.0~ynh3"
+version = "0.6.0~ynh4"
 
 maintainers = ["eric_G"]
 
@@ -29,6 +29,10 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
 
     [install.server_name]
     ask.en = "Select the display name for your Conduit server"
