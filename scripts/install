@@ -13,16 +13,12 @@ source /usr/share/yunohost/helpers
 # RETRIEVE ARGUMENTS FROM THE MANIFEST
 #=================================================
 
-#server_name=$YNH_APP_ARG_SERVER_NAME
-registration=$YNH_APP_ARG_REGISTRATION
 federation="true"
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
 #=================================================
 
-#ynh_app_setting_set --app=$app --key=server_name --value=$server_name
-ynh_app_setting_set --app=$app --key=registration --value=$registration
 ynh_app_setting_set --app=$app --key=federation --value=$federation
 
 #=================================================
