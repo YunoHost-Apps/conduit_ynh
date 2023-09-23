@@ -1,5 +1,5 @@
 [Unit]
-Description=Conduit Matrix Server
+Description=Conduit: Matrix server
 After=network.target
 
 [Service]
