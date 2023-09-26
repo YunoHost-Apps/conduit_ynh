@@ -2,6 +2,7 @@ version = "1.0"
 
 [main]
 name = "Conduit configuration"
+services = ["__APP__"]
 
     [main.registration]
     name = "User registration"
