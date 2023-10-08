@@ -2,6 +2,7 @@ version = "1.0"
 
 [main]
 name = "Conduit configuration"
+services = ["__APP__"]
 
     [main.registration]
     name = "User registration"
@@ -11,7 +12,7 @@ name = "Conduit configuration"
         type = "boolean"
         yes = "true"
         no = "false"
-        bind = "allow_registration:/var/www/__APP__/conduit.toml"
+        bind = "allow_registration:__INSTALL_DIR__/conduit.toml"
 
         [main.registration.federation]
         ask = "Allow Federation"
@@ -19,4 +20,4 @@ name = "Conduit configuration"
         yes = "true"
         no = "false"
         help = "Communicate with other homeservers of the Matrix Federation."
-        bind = "allow_federation:/var/www/__APP__/conduit.toml"
+        bind = "allow_federation:__INSTALL_DIR__/conduit.toml"
