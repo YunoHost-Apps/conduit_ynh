@@ -25,7 +25,6 @@ Conduit keeps things simple, it's a single binary with an embedded database and 
 * Official app website: <https://conduit.rs/>
 * Official admin documentation: <https://gitlab.com/famedly/conduit>
 * Upstream app code repository: <https://gitlab.com/famedly/conduit>
-* YunoHost documentation for this app: <https://yunohost.org/app_conduit>
 * Report a bug: <https://github.com/YunoHost-Apps/conduit_ynh/issues>
 
 ## Developer info

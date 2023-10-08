@@ -25,7 +25,6 @@ Conduit garde les choses simples, c'est un binaire unique avec une base de donn�
 * Site officiel de l’app : <https://conduit.rs/>
 * Documentation officielle de l’admin : <https://gitlab.com/famedly/conduit>
 * Dépôt de code officiel de l’app : <https://gitlab.com/famedly/conduit>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_conduit>
 * Signaler un bug : <https://github.com/YunoHost-Apps/conduit_ynh/issues>
 
 ## Informations pour les développeurs
