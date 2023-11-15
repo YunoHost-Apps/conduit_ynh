@@ -29,11 +29,11 @@ then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir"
+	ynh_setup_source --dest_dir="$install_dir" --keep="conduit.toml"
 fi
 
 chown -R $app:root "$install_dir"
-chmod +x -R "$install_dir/conduit"
+chmod +x "$install_dir/conduit"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
@@ -57,12 +57,12 @@ yunohost service add $app --description="Chat server powered by Matrix" --log="/
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-#ynh_script_progression --message="Updating a configuration file..." --weight=1
+ynh_script_progression --message="Updating a configuration file..." --weight=1
 
-#ynh_add_config --template="../conf/conduit.toml" --destination="$install_dir/conduit.toml"
+ynh_add_config --template="conduit.toml" --destination="$install_dir/conduit.toml"
 
-#chmod 400 "$install_dir/conduit.toml"
-#chown $app:$app "$install_dir/conduit.toml"
+chmod 400 "$install_dir/conduit.toml"
+chown $app:$app "$install_dir/conduit.toml"
 
 #=================================================
 # START SYSTEMD SERVICE

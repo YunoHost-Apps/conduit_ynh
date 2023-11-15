@@ -33,7 +33,7 @@ ynh_setup_source --dest_dir="$install_dir"
 
 chmod -R o-rwx "$install_dir"
 chown -R $app:root "$install_dir"
-chmod +x -R "$install_dir/conduit"
+chmod +x "$install_dir/conduit"
 
 #=================================================
 # SYSTEM CONFIGURATION
@@ -61,7 +61,7 @@ yunohost service add $app --description="Chat server powered by Matrix" --log="/
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/conduit.toml" --destination="$install_dir/conduit.toml"
+ynh_add_config --template="conduit.toml" --destination="$install_dir/conduit.toml"
 
 chmod 400 "$install_dir/conduit.toml"
 chown $app:root "$install_dir/conduit.toml"
