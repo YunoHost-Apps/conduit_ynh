@@ -5,9 +5,9 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.6.0~ynh5"
+version = "0.6.0~ynh6"
 
-maintainers = ["eric_G"]
+maintainers = [ "eric_G" ]
 
 [upstream]
 license = "Apache-2.0"
@@ -18,7 +18,7 @@ fund = "https://liberapay.com/timokoesters/"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = ["arm64", "amd64", "armhf"]
+architectures = [ "arm64", "amd64", "armhf" ]
 multi_instance = false
 
 ldap = "not_relevant"
@@ -53,7 +53,7 @@ ram.runtime = "50M"
     help.en = "If no, accounts should be registered by an admin after defining a secret. If yes, to protect your server and the federation from spammer, federation will be deactived by default. You must Activate CAPTCHA verification before federation reactivation. See Config Panel for instructions"
     help.fr = "Si non, les comptes seront créés par un admin après avoir défini un secret. Si oui, la fédération sera désactivée pour protéger la fédération et vous des spammeurs. Activez la vérification par CAPTCHA avant de réactiver la fédération ! Voir les instructions dans le Config Panel"
     default = false
-    
+
 [resources]
 
     [resources.sources]
@@ -69,27 +69,27 @@ ram.runtime = "50M"
         armhf.url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_arm_v7/conduit?job=docker:master"
         armhf.sha256 = "595534a8eb19496f7ac39130e62a29645fc04b001faad72032144ab97467d394"
 
-    [resources.system_user]
+[resources.system_user]
 
-    [resources.install_dir]
+[resources.install_dir]
 
-    [resources.permissions]
-    main.url = "/"
-    main.show_tile = false
-    
-    server_api.url = "__DOMAIN__/_matrix"
-    server_api.label = "Server access for client apps."
-    server_api.show_tile = false
-    server_api.allowed = "visitors"
-    server_api.auth_header = false
-    server_api.protected = true
+[resources.permissions]
+main.url = "/"
+main.show_tile = false
 
-    server_client_infos.url = "__SERVER_NAME__/.well-known/matrix"
-    server_client_infos.label = "Server info for federation. (well-known)"
-    server_client_infos.show_tile = false
-    server_client_infos.allowed = "visitors"
-    server_client_infos.auth_header = false
-    server_client_infos.protected = true
-    
-    [resources.ports]
-    main.default = 6167
+server_api.url = "__DOMAIN__/_matrix"
+server_api.label = "Server access for client apps."
+server_api.show_tile = false
+server_api.allowed = "visitors"
+server_api.auth_header = false
+server_api.protected = true
+
+server_client_infos.url = "__SERVER_NAME__/.well-known/matrix"
+server_client_infos.label = "Server info for federation. (well-known)"
+server_client_infos.show_tile = false
+server_client_infos.allowed = "visitors"
+server_client_infos.auth_header = false
+server_client_infos.protected = true
+
+[resources.ports]
+main.default = 6167
