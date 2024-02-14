@@ -7,7 +7,7 @@ description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
 version = "0.6.0~ynh6"
 
-maintainers = [ "" ]
+maintainers = []
 
 [upstream]
 license = "Apache-2.0"
