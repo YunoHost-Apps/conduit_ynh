@@ -20,6 +20,18 @@ Conduit is a lightweight open-source server implementation of the Matrix Specifi
 Conduit keeps things simple, it's a single binary with an embedded database and can be much faster than other server implementations in some cases.
 
 **Shipped version:** 0.6.0~ynh6
+## Disclaimers / important information
+
+## Configuration
+
+### Configuration d'un coturn
+To be able to take advantage of audio and video call functionalities, a coturn server is often required. It is possible to [install a coturn server in Yunohost (https://github.com/YunoHost-Apps/coturn-ynh/blob/master/README-en.md).
+It is then necessary to fill in the information provided by the coturn server in the file 'conduit.toml' such as:
+```
+turn_uris = ["turn:your.turn.url:5349?transport=udp", "turn:your.turn.url:5349?transport=tcp, turns:your.turn.url:5349?transport=udp", "turns:your.turn.url:5349?transport=tcp"]
+turn_username = "<YOUR_USERNAME>"
+turn_password = "<YOUR_PASSWORD>"
+```
 ## Documentation and resources
 
 * Official app website: <https://conduit.rs/>
