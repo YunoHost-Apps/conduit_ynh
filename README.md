@@ -32,7 +32,7 @@ turn_uris = ["turns:your.turn.url:5349?transport=udp", "turns:your.turn.url:5349
 turn_username = "<YOUR_USERNAME>"
 turn_password = "<YOUR_PASSWORD>"
 ```
-If your coturn (not Yunohost's one) don't use TLS, you might need to change alittle bit like :
+If your coturn (not Yunohost's one) don't use TLS, you might need to change a little bit like :
 ```
 turn_uris = ["turn:your.turn.url:5349?transport=udp", "turn:your.turn.url:5349?transport=tcp"]
 ```
