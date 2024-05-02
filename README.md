@@ -20,7 +20,6 @@ Conduit is a lightweight open-source server implementation of the Matrix Specifi
 Conduit keeps things simple, it's a single binary with an embedded database and can be much faster than other server implementations in some cases.
 
 **Shipped version:** 0.6.0~ynh6
-
 ## Documentation and resources
 
 - Official app website: <https://conduit.rs/>
