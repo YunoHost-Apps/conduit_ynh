@@ -5,7 +5,7 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.6.0~ynh6"
+version = "0.7.0~ynh1"
 
 maintainers = []
 
@@ -18,7 +18,7 @@ fund = "https://liberapay.com/timokoesters/"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = [ "arm64", "amd64", "armhf" ]
+architectures = [ "arm64", "amd64" ]
 multi_instance = false
 
 ldap = "not_relevant"
@@ -62,12 +62,10 @@ ram.runtime = "50M"
         in_subdir = false
         extract = false
         rename = "conduit"
-        amd64.url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_amd64/conduit?job=docker:master"
-        amd64.sha256 = "eb085e2a43e9225da1fafe01956b361a48b48a1dce9370c3e09bbc120ff6998d"
-        arm64.url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_arm64/conduit?job=docker:master"
-        arm64.sha256 = "ef089841b2ff23285fa458459a3add2a608c0ec0702434b1a8973d2cac1b978f"
-        armhf.url = "https://gitlab.com/famedly/conduit/-/jobs/artifacts/master/raw/build-output/linux_arm_v7/conduit?job=docker:master"
-        armhf.sha256 = "595534a8eb19496f7ac39130e62a29645fc04b001faad72032144ab97467d394"
+        amd64.url = "https://gitlab.com/api/v4/projects/famedly%2Fconduit/jobs/artifacts/master/raw/x86_64-unknown-linux-musl?job=artifacts"
+        amd64.sha256 = "eafa400feefee2a2117d56a09c891d0c39cbec30520a2422056d7d2dcd00de04"
+        arm64.url = "https://gitlab.com/api/v4/projects/famedly%2Fconduit/jobs/artifacts/master/raw/aarch64-unknown-linux-musl?job=artifacts"
+        arm64.sha256 = "371a6572c370f82810e41666fe71bdacfd7b611b245310d6465392e9da7c3130"
 
 [resources.system_user]
 
