@@ -19,8 +19,8 @@ Il NE doit PAS être modifié à la main.
 Conduit est une implémentation de serveur open source légère de la spécification Matrix avec un accent sur une configuration facile et des exigences système faibles. Cela signifie que vous pouvez créer votre propre configuration Conduit en quelques minutes seulement.
 Conduit garde les choses simples, c'est un binaire unique avec une base de données intégrée et peut être beaucoup plus rapide que d'autres implémentations de serveur dans certains cas.
 
-
 **Version incluse :** 0.7.0~ynh1
+
 ## Documentations et ressources
 
 - Site officiel de l’app : <https://conduit.rs/>
