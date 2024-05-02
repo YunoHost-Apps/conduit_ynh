@@ -18,7 +18,7 @@ fund = "https://liberapay.com/timokoesters/"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = [ "arm64", "amd64", "armhf" ]
+architectures = [ "arm64", "amd64" ]
 multi_instance = false
 
 ldap = "not_relevant"
