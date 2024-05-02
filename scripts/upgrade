@@ -28,7 +28,7 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
-	ynh_setup_source --dest_dir="$install_dir" --keep="conduit.toml"
+	ynh_setup_source --dest_dir="$install_dir" --full_replace=1 --keep="conduit.toml"
 fi
 
 chown -R $app:root "$install_dir"
