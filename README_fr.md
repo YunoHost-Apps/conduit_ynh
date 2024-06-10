@@ -20,7 +20,7 @@ Conduit est une implémentation de serveur open source légère de la spécifica
 Conduit garde les choses simples, c'est un binaire unique avec une base de données intégrée et peut être beaucoup plus rapide que d'autres implémentations de serveur dans certains cas.
 
 
-**Version incluse :** 0.7.0~ynh2
+**Version incluse :** 0.7.0~ynh3
 ## Documentations et ressources
 
 - Site officiel de l’app : <https://conduit.rs/>
