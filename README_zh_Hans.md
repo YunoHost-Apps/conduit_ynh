@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Conduit
+# YunoHost 上的 Conduit
 
 [![集成程度](https://dash.yunohost.org/integration/conduit.svg)](https://dash.yunohost.org/appci/app/conduit) ![工作状态](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
 
