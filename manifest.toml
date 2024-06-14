@@ -5,7 +5,7 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.7.0~ynh3"
+version = "0.8.0~ynh1"
 
 maintainers = []
 
@@ -63,10 +63,10 @@ ram.runtime = "50M"
         extract = false
         rename = "conduit"
         amd64.url = "https://gitlab.com/api/v4/projects/famedly%2Fconduit/jobs/artifacts/next/raw/x86_64-unknown-linux-musl?job=artifacts"
-        amd64.sha256 = "70ce4d8093263ae54972aa9a3bb89c4b4755d1f5fe7e598b86001f72f1ff3d8e"
+        amd64.sha256 = "b8971d19469d44b732af8d78cb856d9203ee72f8812091b129fe093d2a0231c9"
 
         arm64.url = "https://gitlab.com/api/v4/projects/famedly%2Fconduit/jobs/artifacts/next/raw/aarch64-unknown-linux-musl?job=artifacts"
-        arm64.sha256 = "d04a9e5fdca06904c60381467f4eaaf878b1e1982ddb7c04a40e2c41d4673c99"
+        arm64.sha256 = "e194debbb9dde3d403eecf5974e4ec2e2de21e3289f60bc512b34a2282d83edf"
 
 [resources.system_user]
 
