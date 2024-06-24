@@ -63,10 +63,10 @@ ram.runtime = "50M"
         extract = false
         rename = "conduit"
         amd64.url = "https://gitlab.com/api/v4/projects/famedly%2Fconduit/jobs/artifacts/next/raw/x86_64-unknown-linux-musl?job=artifacts"
-        amd64.sha256 = "b8971d19469d44b732af8d78cb856d9203ee72f8812091b129fe093d2a0231c9"
+        amd64.sha256 = "c5c21df55ec6159626cc158b1eae051c2572da8eb55a1e39a68c7fd38a11d7d3"
 
         arm64.url = "https://gitlab.com/api/v4/projects/famedly%2Fconduit/jobs/artifacts/next/raw/aarch64-unknown-linux-musl?job=artifacts"
-        arm64.sha256 = "e194debbb9dde3d403eecf5974e4ec2e2de21e3289f60bc512b34a2282d83edf"
+        arm64.sha256 = "61502ecb0ebd76e2b9648b523370299cec54f0dd38334e439267d36e7b8ee54b"
 
 [resources.system_user]
 
