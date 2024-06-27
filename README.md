@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Conduit for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/conduit.svg)](https://dash.yunohost.org/appci/app/conduit) ![Working status](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
+[![Integration level](https://dash.yunohost.org/integration/conduit.svg)](https://ci-apps.yunohost.org/ci/apps/conduit/) ![Working status](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
 
 [![Install Conduit with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=conduit)
 
