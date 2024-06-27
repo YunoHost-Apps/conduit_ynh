@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Conduit para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/conduit.svg)](https://dash.yunohost.org/appci/app/conduit) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/conduit.svg)](https://ci-apps.yunohost.org/ci/apps/conduit/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
 
 [![Instalar Conduit con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=conduit)
 
