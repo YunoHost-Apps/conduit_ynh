@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Conduit for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/conduit.svg)](https://dash.yunohost.org/appci/app/conduit) ![Working status](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
+[![Integration level](https://dash.yunohost.org/integration/conduit.svg)](https://ci-apps.yunohost.org/ci/apps/conduit/) ![Working status](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
 
 [![Install Conduit with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=conduit)
 
@@ -19,7 +19,7 @@ It shall NOT be edited by hand.
 Conduit is a lightweight open-source server implementation of the Matrix Specification with a focus on easy setup and low system requirements. That means you can make your own Conduit setup in just a few minutes.
 Conduit keeps things simple, it's a single binary with an embedded database and can be much faster than other server implementations in some cases.
 
-**Shipped version:** 0.8.0~ynh1
+**Shipped version:** 0.8.0~ynh2
 ## Documentation and resources
 
 - Official app website: <https://conduit.rs/>
