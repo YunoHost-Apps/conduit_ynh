@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Conduit pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/conduit.svg)](https://dash.yunohost.org/appci/app/conduit) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/conduit.svg)](https://ci-apps.yunohost.org/ci/apps/conduit/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
 
 [![Installer Conduit avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=conduit)
 
@@ -20,7 +20,7 @@ Conduit est une implémentation de serveur open source légère de la spécifica
 Conduit garde les choses simples, c'est un binaire unique avec une base de données intégrée et peut être beaucoup plus rapide que d'autres implémentations de serveur dans certains cas.
 
 
-**Version incluse :** 0.8.0~ynh1
+**Version incluse :** 0.8.0~ynh2
 ## Documentations et ressources
 
 - Site officiel de l’app : <https://conduit.rs/>
