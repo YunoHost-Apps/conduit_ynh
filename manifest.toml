@@ -12,7 +12,7 @@ maintainers = []
 [upstream]
 license = "Apache-2.0"
 website = "https://conduit.rs/"
-admindoc = "https://gitlab.com/famedly/conduit"
+admindoc = "https://docs.conduit.rs/"
 code = "https://gitlab.com/famedly/conduit"
 fund = "https://liberapay.com/timokoesters/"
 

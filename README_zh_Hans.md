@@ -23,7 +23,7 @@ Conduit keeps things simple, it's a single binary with an embedded database and 
 ## 文档与资源
 
 - 官方应用网站： <https://conduit.rs/>
-- 官方管理文档： <https://gitlab.com/famedly/conduit>
+- 官方管理文档： <https://docs.conduit.rs/>
 - 上游应用代码库： <https://gitlab.com/famedly/conduit>
 - YunoHost 商店： <https://apps.yunohost.org/app/conduit>
 - 报告 bug： <https://github.com/YunoHost-Apps/conduit_ynh/issues>

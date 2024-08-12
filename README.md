@@ -23,7 +23,7 @@ Conduit keeps things simple, it's a single binary with an embedded database and 
 ## Documentation and resources
 
 - Official app website: <https://conduit.rs/>
-- Official admin documentation: <https://gitlab.com/famedly/conduit>
+- Official admin documentation: <https://docs.conduit.rs/>
 - Upstream app code repository: <https://gitlab.com/famedly/conduit>
 - YunoHost Store: <https://apps.yunohost.org/app/conduit>
 - Report a bug: <https://github.com/YunoHost-Apps/conduit_ynh/issues>
