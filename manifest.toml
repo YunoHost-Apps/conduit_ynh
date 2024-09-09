@@ -5,7 +5,7 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.8.0~ynh3"
+version = "0.8.0~ynh4"
 
 maintainers = []
 
@@ -17,7 +17,8 @@ code = "https://gitlab.com/famedly/conduit"
 fund = "https://liberapay.com/timokoesters/"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.30"
+helpers_version = "2.1"
 architectures = [ "arm64", "amd64" ]
 multi_instance = false
 
