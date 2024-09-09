@@ -1,27 +1,19 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
 # STOP SYSTEMD SERVICE
 #=================================================
-ynh_script_progression --message="Stopping a systemd service..." --weight=1
+ynh_script_progression "Stopping $app's systemd service..."
 
-ynh_systemd_action --service_name=$app --action="stop" --log_path="systemd"
+ynh_systemctl --service=$app --action="stop" --log_path="systemd"
 
-#=================================================
-# "REBUILD" THE APP (DEPLOY NEW SOURCES, RERUN NPM BUILD...)
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Upgrading source files..." --weight=1
+ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --keep="conduit.toml"
 
@@ -31,17 +23,17 @@ chmod +x "$install_dir/conduit"
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
-ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
+ynh_script_progression "Upgrading system configurations related to $app..."
 
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 # Create .well-known redirection for access by federation
 if yunohost --output-as plain domain list | grep -q "^$server_name$"
 then
-    ynh_add_config --template="server_name.conf" --destination="/etc/nginx/conf.d/${server_name}.d/${app}_server_name.conf"
+    ynh_config_add --template="server_name.conf" --destination="/etc/nginx/conf.d/${server_name}.d/${app}_server_name.conf"
 fi
 
-ynh_add_systemd_config
+ynh_config_add_systemd
 
 yunohost service add $app --description="Chat server powered by Matrix" --log="/var/log/$app/$app.log"
 
@@ -50,9 +42,9 @@ yunohost service add $app --description="Chat server powered by Matrix" --log="/
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression --message="Updating a configuration file..." --weight=1
+ynh_script_progression "Updating configuration..."
 
-ynh_add_config --template="conduit.toml" --destination="$install_dir/conduit.toml"
+ynh_config_add --template="conduit.toml" --destination="$install_dir/conduit.toml"
 
 chmod 400 "$install_dir/conduit.toml"
 chown $app:$app "$install_dir/conduit.toml"
@@ -60,12 +52,12 @@ chown $app:$app "$install_dir/conduit.toml"
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_script_progression --message="Starting a systemd service..." --weight=1
+ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
+ynh_systemctl --service=$app --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Upgrade of $app completed" --last
+ynh_script_progression "Upgrade of $app completed"
