@@ -4,7 +4,7 @@
 # COMMON VARIABLES AND CUSTOM HELPERS
 #=================================================
 
-if [ "$registration" -eq 1 ]; then
+if [[ "${registration:-}" -eq 1 ]]; then
     registration="true"
 else
     registration="false"
