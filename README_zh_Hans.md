@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Conduit
 
-[![集成程度](https://dash.yunohost.org/integration/conduit.svg)](https://ci-apps.yunohost.org/ci/apps/conduit/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/conduit)](https://ci-apps.yunohost.org/ci/apps/conduit/)
+![工作状态](https://apps.yunohost.org/badge/state/conduit)
+![维护状态](https://apps.yunohost.org/badge/maintained/conduit)
 
 [![使用 YunoHost 安装 Conduit](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=conduit)
 

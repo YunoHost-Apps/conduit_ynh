@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Conduit voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/conduit.svg)](https://ci-apps.yunohost.org/ci/apps/conduit/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/conduit)](https://ci-apps.yunohost.org/ci/apps/conduit/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/conduit)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/conduit)
 
 [![Conduit met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=conduit)
 

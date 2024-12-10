@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Conduit untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/conduit.svg)](https://ci-apps.yunohost.org/ci/apps/conduit/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/conduit)](https://ci-apps.yunohost.org/ci/apps/conduit/)
+![Status kerja](https://apps.yunohost.org/badge/state/conduit)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/conduit)
 
 [![Pasang Conduit dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=conduit)
 

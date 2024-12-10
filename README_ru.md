@@ -5,7 +5,9 @@
 
 # Conduit для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/conduit.svg)](https://ci-apps.yunohost.org/ci/apps/conduit/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/conduit.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/conduit.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/conduit)](https://ci-apps.yunohost.org/ci/apps/conduit/)
+![Состояние работы](https://apps.yunohost.org/badge/state/conduit)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/conduit)
 
 [![Установите Conduit с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=conduit)
 
