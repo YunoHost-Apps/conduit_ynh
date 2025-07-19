@@ -5,7 +5,7 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.10.4~ynh1"
+version = "0.10.6~ynh1"
 
 maintainers = []
 
@@ -17,13 +17,12 @@ code = "https://gitlab.com/famedly/conduit"
 fund = "https://liberapay.com/timokoesters/"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.0.9"
 helpers_version = "2.1"
 architectures = [ "arm64", "amd64" ]
 multi_instance = false
 
 ldap = "not_relevant"
-
 sso = "not_relevant"
 
 disk = "50M"
@@ -63,11 +62,10 @@ ram.runtime = "50M"
         in_subdir = false
         extract = false
         rename = "conduit"
-        amd64.url = "https://gitlab.com/famedly/conduit/-/jobs/10201697409/artifacts/raw/x86_64-unknown-linux-musl?inline=false"
-        amd64.sha256 = "f762d3ce7f95b381e0a2f9e9130faee993a3ccfdb70d9d58c17f8f3e8ba4a90b"
-
-        arm64.url = "https://gitlab.com/famedly/conduit/-/jobs/10201697409/artifacts/raw/aarch64-unknown-linux-musl?inline=false"
-        arm64.sha256 = "ae37e9e5f764c02058dc86fceaa27352ee68b4e056f500e13c2e4849daa339a7"
+        amd64.url = "https://gitlab.com/famedly/conduit/-/jobs/10707024718/artifacts/raw/x86_64-unknown-linux-musl?inline=false"
+        amd64.sha256 = "7c99064c15db62e0366b2b538d5350ae1cdbf30c7a52759c400a67dad3d82838"
+        arm64.url = "https://gitlab.com/famedly/conduit/-/jobs/10707024718/artifacts/raw/aarch64-unknown-linux-musl?inline=false"
+        arm64.sha256 = "a969d8ee321d95f4f920362a4a5904186bc525076ab46ac11fbd3e5dc9a8868c"
 
 [resources.system_user]
 
