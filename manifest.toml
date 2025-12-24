@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "conduit"
@@ -5,7 +7,7 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.10.8~ynh1"
+version = "0.10.10~ynh1"
 
 maintainers = []
 
@@ -59,13 +61,19 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
+        prefetch = false
+        url = "https://gitlab.com/famedly/conduit/-/archive/v0.10.10/conduit-v0.10.10.tar.gz"
+        sha256 = "nonethisisadummyanruisetanursietanurisetanursietaunierstauinress"
+        autoupdate.strategy = "latest_gitlab_release"
+
+        [resources.sources.binaries]
         in_subdir = false
         extract = false
         rename = "conduit"
-        amd64.url = "https://gitlab.com/famedly/conduit/-/jobs/10982682116/artifacts/raw/x86_64-unknown-linux-musl?inline=false"
-        amd64.sha256 = "8a158f5c38156ab08b37c153231c03dcd20e62fb4bf121d646ea134f7be27c14"
-        arm64.url = "https://gitlab.com/famedly/conduit/-/jobs/10982682116/artifacts/raw/aarch64-unknown-linux-musl?inline=false"
-        arm64.sha256 = "936e2e94adfdfe19c2a8f87758af95ae4e24599d276c0704a51ee6b3d86cba1e"
+        amd64.url = "https://gitlab.com/famedly/conduit/-/jobs/12522761291/artifacts/raw/x86_64-unknown-linux-musl"
+        amd64.sha256 = "5a5d55c85156a3825705de65f2d6217738d456bdc5f90753af3365bd46d3c31a"
+        arm64.url = "https://gitlab.com/famedly/conduit/-/jobs/12522761291/artifacts/raw/aarch64-unknown-linux-musl"
+        arm64.sha256 = "fcd8e9a8918c5b2e21d2bf3964324fd800dbf30adbdeba1f8ed406d4980904c7"
 
 [resources.system_user]
 

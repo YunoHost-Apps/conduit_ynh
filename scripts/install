@@ -16,7 +16,7 @@ ynh_app_setting_set --key=federation --value=$federation
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-ynh_setup_source --dest_dir="$install_dir"
+ynh_setup_source --dest_dir="$install_dir" --source_id=binaries
 
 chown -R $app:root "$install_dir"
 chmod +x "$install_dir/conduit"
