@@ -15,7 +15,7 @@ ynh_systemctl --service=$app --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --keep="conduit.toml"
+ynh_setup_source --dest_dir="$install_dir" --source_id=binaries --keep="conduit.toml"
 
 chown -R $app:root "$install_dir"
 chmod +x "$install_dir/conduit"

@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "conduit"
@@ -59,6 +61,12 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
+        prefetch = false
+        url = "https://gitlab.com/famedly/conduit/-/archive/v0.10.10/conduit-v0.10.10.tar.gz"
+        sha256 = "nonethisisadummyanruisetanursietanurisetanursietaunierstauinress"
+        autoupdate.strategy = "latest_gitlab_release"
+
+        [resources.sources.binaries]
         in_subdir = false
         extract = false
         rename = "conduit"
