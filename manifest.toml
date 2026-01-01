@@ -7,7 +7,7 @@ name = "Conduit"
 description.en = "Simple, fast and reliable chat server powered by Matrix"
 description.fr = "Serveur de chat simple, rapide et fiable alimenté par Matrix"
 
-version = "0.10.10~ynh1"
+version = "0.10.11~ynh1"
 
 maintainers = []
 
@@ -62,8 +62,8 @@ ram.runtime = "50M"
 
         [resources.sources.main]
         prefetch = false
-        url = "https://gitlab.com/famedly/conduit/-/archive/v0.10.10/conduit-v0.10.10.tar.gz"
-        sha256 = "nonethisisadummyanruisetanursietanurisetanursietaunierstauinress"
+        url = "https://gitlab.com/famedly/conduit/-/archive/v0.10.11/conduit-v0.10.11.tar.bz2"
+        sha256 = "d75ad0abf380973f4c7de1e6ca279d0b55764a8265fd28029bafdd3504ceec75"
         autoupdate.strategy = "latest_gitlab_release"
 
         [resources.sources.binaries]
